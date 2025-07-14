@@ -52,7 +52,7 @@ if(password!==confirmpassword) {
   }
   try{
   const res = await axios.put(
-  "https://healthcare-ioez.onrender.com/api/auth/changepassword",
+  "https://healthfirst-docker-backend.onrender.com/api/auth/changepassword",
   {
     email: user.user.email,
     id: user.user._id,

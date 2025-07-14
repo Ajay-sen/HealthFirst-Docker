@@ -66,7 +66,7 @@ export default function PatientForm() {
     console.log(genderData);
     console.log(bloodData);
     
-    const response = await fetch('https://healthcare-ioez.onrender.com/api/patients/create-patient', {
+    const response = await fetch('https://healthfirst-docker-backend.onrender.com/api/patients/create-patient', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

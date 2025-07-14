@@ -67,7 +67,7 @@ export default function Signup() {
     else{
     setclick("");
     // const { username, email, password } = credentials;
-    const response = await fetch('https://healthcare-ioez.onrender.com/api/auth/signup', {
+    const response = await fetch('https://healthfirst-docker-backend.onrender.com/api/auth/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

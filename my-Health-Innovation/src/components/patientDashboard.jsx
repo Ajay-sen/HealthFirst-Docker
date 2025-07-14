@@ -28,7 +28,7 @@ const PatientDashboard = () => {
   const getPatient = async () => {
     try {
       if (user) {
-        const response = await fetch('https://healthcare-ioez.onrender.com/api/patients/getpatient', {
+        const response = await fetch('https://healthfirst-docker-backend.onrender.com/api/patients/getpatient', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const PatientDashboard = () => {
   };
 
   const getDoctorById = async (doctorId) => {
-    const response = await fetch(`https://healthcare-ioez.onrender.com/api/doctors/getdoctorbyid/${doctorId}`, {
+    const response = await fetch(`https://healthfirst-docker-backend.onrender.com/api/doctors/getdoctorbyid/${doctorId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ const PatientDashboard = () => {
         setAppointments(ans);
         setSelectedDoctor(null);
         setSelectedAppointment(null);
-        const response = await fetch(`https://healthcare-ioez.onrender.com/api/appointment/delete-appintment/${id}`, {
+        const response = await fetch(`https://healthfirst-docker-backend.onrender.com/api/appointment/delete-appintment/${id}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

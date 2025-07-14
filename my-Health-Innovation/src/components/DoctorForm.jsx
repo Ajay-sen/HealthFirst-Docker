@@ -142,7 +142,7 @@ export default function DoctorForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { name, contact, email, fees, experienceInYears, hospital, Appointment } = Credentials;
-    const response = await fetch("https://healthcare-ioez.onrender.com/api/doctors/createdoctor", {
+    const response = await fetch("https://healthfirst-docker-backend.onrender.com/api/doctors/createdoctor", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
